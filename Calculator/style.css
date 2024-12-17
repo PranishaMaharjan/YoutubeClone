@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+  background-color: grey;
+  
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+.row {
+  text-align: center;
+  /* padding: 40px; */
+}
+.button {
+  padding: 20px;
+}

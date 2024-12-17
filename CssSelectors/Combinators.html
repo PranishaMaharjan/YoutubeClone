@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- DESCENDANT COMBINATORS -->
+    <h1>Descendant Combinators</h1>
+    <p>Paragraph 1</p>
+    <div class="descendant">
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <h2>Heading</h2>
+      <div>
+        <p>Paragraph 4</p>
+      </div>
+      <p>Paragraph 5</p>
+    </div>
+    <hr />
+
+    <!-- CHILD COMBINATORS -->
+    <h1>Child Combinators</h1>
+    <p>Paragraph 1</p>
+    <div class="child">
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <h2>Heading</h2>
+      <div>
+        <p>Paragraph 4</p>
+      </div>
+      <p>Paragraph 5</p>
+    </div>
+    <hr />
+
+    <!-- NEXT/ADJACENT SIBLING SELECTORS -->
+    <h1>Next/Adjacent Sibling Combinators</h1>
+    <p>Paragraph 1</p>
+    <div class="nextSibling">
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <h2>Heading</h2>
+      <div class="nextSibling">
+        <p>Paragraph 4</p>
+      </div>
+      <p>Paragraph 5</p>
+      <p>Paragraph 6</p>
+    </div>
+    <p>Paragraph 7</p>
+    <hr />
+
+    <!-- SUBSEQUENT/GENERAL SIBLING -->
+    <h1>General/Subsequent</h1>
+    <p>Paragraph 1</p>
+    <div class="generalSibling">
+      <p>Paragraph 2</p>
+      <p>Paragraph 3</p>
+      <div class="generalSibling">
+        <h2>Heading</h2>
+        <p>Paragraph 4</p>
+      </div>
+      <p>Paragraph 5</p>
+      <p>Paragraph 6</p>
+    </div>
+    <p>Paragraph 7</p>
+    <p>Paragraph 8</p>
+    <p>Paragraph 9</p>
+    <hr />
+  </body>
+</html>

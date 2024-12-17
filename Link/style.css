@@ -1,0 +1,12 @@
+.linkEg:link {
+  background-color: aquamarine;
+}
+.visitedEg:visited {
+  color: darkgreen;
+}
+.hoverEg:hover {
+  background-color: brown;
+}
+.activeEg:active {
+  background-color: blueviolet;
+}

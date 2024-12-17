@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .color {
+        width: 100%;
+      }
+      .red {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        animation-name: translate;
+        animation-duration: 10s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: forward;
+      }
+      .blue {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        animation-name: rotate;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      .green {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        animation-name: scale;
+        animation-duration: 10s;
+        animation-timing-function: ease-in;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+      }
+      .yellow {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        animation-name: mymove;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-delay: none;
+        animation-iteration-count: infinite;
+        position: relative;
+      }
+      /* .black {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+      } */
+
+      @keyframes translate {
+        from {
+          transform: translate(0px, 0px);
+        }
+        to {
+          transform: translate(300px, 0px);
+        }
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes scale {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(2);
+        }
+      }
+      @keyframes mymove {
+        0% {
+          left: 0px;
+        }
+        25% {
+          left: 600px;
+        }
+        50% {
+          left: 100px;
+        }
+        75% {
+          left: 700px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color">
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="green"></div>
+      <div class="yellow"></div>
+      <!-- <div class="black"></div>  -->
+    </div>
+  </body>
+</html>

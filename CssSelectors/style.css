@@ -1,0 +1,15 @@
+.descendant p {
+  background-color: blue;
+}
+.child > p {
+  font-weight: bolder;
+  color: blueviolet;
+}
+.nextSibling + p {
+  text-align: center;
+  background-color: antiquewhite;
+}
+.generalSibling ~ p {
+  color: yellowgreen;
+  font-size: 30px;
+}

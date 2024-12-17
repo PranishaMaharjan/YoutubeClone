@@ -1,0 +1,14 @@
+$mywidth: 300px;
+$myheight: 300px;
+$mycolor: red;
+
+.container {
+  width: 800px;
+  height: 800px;
+  background-color: black;
+}
+.container__one--show {
+  width: $mywidth;
+  height: $myheight;
+  background-color: $mycolor;
+}

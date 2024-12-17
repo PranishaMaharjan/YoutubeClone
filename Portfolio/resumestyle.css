@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(white, rgb(7, 0, 37));
+}
+
+.resume {
+  width: 1000px;
+  height: 1300px;
+  box-sizing: border-box;
+  border: 6px solid black;
+  margin: 140px 180px 40px;
+  background-color: rgb(234, 234, 250);
+}
+
+.resume__contact {
+  display: grid;
+  grid: auto / auto auto;
+  margin-top: 20px;
+}
+
+.resume__title {
+  width: 988px;
+  font-size: 12px;
+  background-color: rgb(194, 194, 216);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+
+.contact {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 40px;
+}
+
+.detail {
+  font-size: 18px;
+}
+
+.resume__profile__content--show {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.resume__education {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  margin-left: 100px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.resume__education__bachelors__date {
+  text-align: center;
+}
+
+.resume__skills {
+  margin: 20px 60px 10px 100px;
+  font-size: 17px;
+}
+
+.resume__skills__programming,
+.resume__skills__uiux,
+.resume__skills__pm,
+.resume__skills__technical {
+  padding-bottom: 15px;
+}
+
+.resume__projects {
+  margin: 20px 100px 10px 100px;
+  font-size: 17px;
+}
+
+.projects {
+  padding-bottom: 10px;
+}
+
+.resume__experience {
+  margin: 20px 0px 30px 100px;
+  font-size: 17px;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* column-gap: 30px; */
+}
+
+.resume__experience__cm {
+  padding-bottom: 20px;
+}
+
+.date {
+  text-align: center;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  color: red;
+  transition: 0.4s;
+}

@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+  height: 615px;
+  background: linear-gradient(10deg, black, rgb(4, 4, 134));
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.container__cup--main {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(5deg, rgb(135, 132, 163), white);
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 40%;
+  /* align-items: center; */
+  margin-top: 300px;
+  /* overflow: hidden; */
+}
+
+.container__cuptop--circle {
+  /* width: calc(100%-20px); */
+  position: absolute;
+  top: 282px;
+  width: 250px;
+  height: 50px;
+  background: linear-gradient(to right, rgb(135, 132, 163), white);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.container__cuptop__tea--show {
+  width: 250px;
+  height: 40px;
+  background-color: rgb(172, 131, 78);
+  position: absolute;
+  top: 30px;
+  border-radius: 50%;
+}
+
+.container__handle--main {
+  position: absolute;
+  left: 732px;
+  top: 310px;
+  width: 100px;
+  height: 110px;
+  border: 25px solid #dcdcdc;
+  border-radius: 50%;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  transform: rotate(42deg);
+  /* background: linear-gradient(to right, rgb(135, 132, 163), white); */
+}
+
+.container__vapour--main {
+  position: relative;
+  display: flex;
+}
+
+.container__vapour__blow--animation {
+  position: relative;
+  top: 250px;
+  background-color: white;
+  display: block;
+  width: 6px;
+  height: 120px;
+  margin: 2px;
+  border-radius: 30%;
+  filter: blur(12px);
+  animation-name: blowvapour;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: calc(var(--i) * -0.5s);
+}
+
+@keyframes blowvapour {
+  /* from {
+    transform: translateY(0px) scaleX(3);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-300px) scale(6);
+    opacity: 1;
+  } */
+  0% {
+    transform: translateY(0) scaleX(2);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(-100px) scaleX(4);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scaleX(6);
+  }
+  75% {
+    transform: translateY(-250px) scaleX(8);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+    opacity: 0;
+  }
+}

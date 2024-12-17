@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contactstyle.css" />
+  </head>
+  <body>
+    <header class="header header--show">
+      <a href="#" class="header__name header__name--show"
+        ><span>Pranisha Maharjan</span></a
+      >
+
+      <nav class="header__navbar header__navbar--show">
+        <a
+          href="http://localhost:5500/Portfolio/portfolio.html"
+          id="portfolio"
+          class="header__navbar__content header__navbar__content--click"
+          >Portfolio</a
+        >
+        <a
+          href="http://localhost:5500/Portfolio/resume.html"
+          id="resume"
+          class="header__navbar__content header__navbar__content--click"
+          >Resume</a
+        >
+        <a
+          href="#"
+          id="projects"
+          class="header__navbar__content header__navbar__content--click"
+          >Projects</a
+        >
+        <a
+          href="http://localhost:5500/Portfolio/contact.html"
+          id="contact"
+          class="header__navbar__content header__navbar__content--click"
+          >Contact</a
+        >
+        <!-- <a href="#" class="header__navbar--click"></a> -->
+      </nav>
+
+      <div class="header__icons">
+        <a href="https://github.com/PranishaMaharjan"
+          ><img
+            src="images/githubIcon.png"
+            alt=""
+            id="github"
+            class="header__icons__show header__icons__show--click"
+        /></a>
+
+        <a
+          href="https://www.linkedin.com/in/pranisha-maharjan-233377284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm
+          "
+          ><img
+            src="images/linkedinIcon.png"
+            alt=""
+            id="linkedin"
+            class="header__icons__show header__icons__show--click"
+        /></a>
+
+        <a
+          href="https://www.instagram.com/praniisha_._/profilecard/?igsh=MW9qdDF2cWx0bms3NQ=="
+          ><img
+            src="images/instagramIcon.png"
+            alt=""
+            id="instagram"
+            class="header__icons__show header__icons__show--click"
+        /></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container__contact">
+        <div class="contact container__contact__phone" style="--contact: 0">
+          <img src="images/contactIcon.png" alt="" class="icon" />
+          <p class="detail container__contact__phone__show">9869664939</p>
+        </div>
+
+        <div class="contact container__contact__address" style="--contact: 1">
+          <img src="images/addressIcon.png" alt="" class="icon" />
+          <p class="detail container__contact__address__show">
+            Khusibun, Kathmandu
+          </p>
+        </div>
+
+        <div class="contact container__contact__gmail" style="--contact: 2">
+          <img src="images/gmailIcon.png" alt="" class="icon" />
+          <p class="detail container__contact__gmail__show">
+            pranishamjn@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <form action="" class="form">
+          <div class="form__contact form__contact--show">
+            <div class="fill form__contact__fullname">
+              <label for="full_name">Full Name:</label>
+              <input id="full_name" type="text" name="fullname" />
+            </div>
+
+            <div class="fill form__contact__address">
+              <label for="address">Address:</label>
+              <input id="address" type="text" name="address" />
+            </div>
+
+            <div class="fill form__contact__email">
+              <label for="email">Email:</label>
+              <input id="email" type="text" name="email" />
+            </div>
+
+            <div class="fill form__contact__phone">
+              <label for="phone">Phone Number:</label>
+              <input id="phone" type="text" name="phone" />
+            </div>
+          </div>
+          <div class="fill form__contact__message">
+            <label for="message">Message:</label>
+            <input id="message" type="text" name="message" />
+          </div>
+
+          <div class="form__contact__submit form__contact__submit--show">
+            <input
+              class="form__contact__submit__button form__contact__submit__button--click"
+              type="submit"
+              name="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+    <style>
+      /* .color {
+        width: 100%;
+        position: relative;
+      } */
+      .red {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* z-index: ; */
+        position: absolute;
+      }
+      .blue {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        transform: translate(10px, -170px);
+        position: absolute;
+        z-index: 2;
+      }
+      .yellow {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        /* transform: translate(20px, -340px); */
+        position: absolute;
+        z-index: 5;
+      }
+      .green {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        /* transform: translate(30px, -510px); */
+        position: absolute;
+      }
+      /* .white {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        transform: translate(40px, -650px);
+      } */
+      .black {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+
+        z-index: 1;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color">
+      <div class="red"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+      <div class="green"></div>
+      <div class="black"></div>
+      <!-- <div class="white"></div> -->
+    </div>
+  </body>
+</html>

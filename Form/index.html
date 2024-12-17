@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form and Tables</title>
+    <link rel="stylesheet" href="style.scss" />
+  </head>
+  <body>
+    <form action="tables.html">
+      <div class="container">
+        <h1>Registration form</h1>
+        <div class="form_container">
+          <div class="form_input">
+            <label for="full_name">Full Name</label>
+            <input type="text" name="full_name" />
+          </div>
+
+          <div class="form_input">
+            <label for="username">Username</label>
+            <input type="text" name="username" />
+          </div>
+
+          <div class="form_input">
+            <label for="email">Email</label>
+            <input type="text" name="email" />
+          </div>
+
+          <div class="form_input">
+            <label for="phone_number">Phone Number</label>
+            <input id="phone_number" type="tel" name="phone_number" />
+          </div>
+
+          <div class="form_input">
+            <label for="password">Password</label>
+            <input type="password" name="password" />
+          </div>
+
+          <div class="form_input">
+            <label for="password">Confirm Password</label>
+            <input type="password" name="confirm_password" />
+          </div>
+
+          <div class="form_radio">
+            <label for="radio">Gender</label>
+            <input type="radio" name="gender" value="male" />Male&nbsp;
+            <input type="radio" name="gender" value="female" />Female&nbsp;
+            <input type="radio" name="gender" value="Others" />Prefer not to
+            say<br />
+          </div>
+        </div>
+
+        <div class="form_checkbox">
+          <label for="checkbox">Your expertise</label>
+          <input type="checkbox" name="course1" value="html" />HTML&nbsp;
+          <input type="checkbox" name="course2" value="css" />CSS&nbsp;
+          <input
+            type="checkbox"
+            name="course3"
+            value="javascript"
+          />Javascript&nbsp;
+          <input type="checkbox" name="course4" value="php" />PHP&nbsp;
+        </div>
+
+        <div class="form_dropdown">
+          <label for="dropdown"> Select Course</label>
+          <select name="course" class="dropdown">
+            <option value="bim">BIM</option>
+            <option value="bbm">BBM</option>
+            <option value="bca">BCA</option>
+            <option value="csit">CSIT</option>
+          </select>
+        </div>
+
+        <div class="form_submit">
+          <input type="submit" name="Submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

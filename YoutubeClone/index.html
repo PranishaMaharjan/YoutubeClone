@@ -2,73 +2,80 @@
 <html>
   <head>
     <title>Youtube Clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <aside>
-        <div class="ytb-bar">
-          <div class="sidebar">
-            <img src="images/barIcon.jpg" alt="Bar Icon" />
+      <div class="header_bar">
+        <nav>
+          <div class="ytb-bar">
+            <div class="sidebar">
+              <img src="images/barIcon.jpg" alt="Bar Icon" />
+            </div>
+            <div class="logo">
+              <img src="images/ytblogo.png" alt="Youtube Logo" />
+            </div>
           </div>
 
-          <div class="logo">
-            <img src="images/ytblogo.png" alt="Youtube Logo" />
+          <div class="center-nav">
+            <div class="search">
+              <input type="text" />
+              <button>
+                <img src="images/searchIcon.png" alt="Search Icon" />
+              </button>
+            </div>
+            <div class="mic">
+              <img src="images/micIcon.png" alt="Mic Icon" />
+            </div>
           </div>
-        </div>
-        <div class="side-icons">
-          <i>
-            <img src="images/homeIcon.png" alt="Home Icon" />
-          </i>
-          <span>Home</span>
-        </div>
-        <div class="side-icons">
-          <i>
-            <img src="images/shortsIcon.png" alt="Shorts Icon" />
-          </i>
-          <span>Shorts</span>
-        </div>
-        <div class="side-icons">
-          <i>
-            <img src="images/subscriptionIcon.png" alt="Subscription Icon" />
-          </i>
-          <span>Subscription</span>
-        </div>
-      </aside>
 
-      <div class="main-container">
-        <header>
-          <nav>
-            <div class="center-nav">
-              <div class="search">
-                <input type="text" />
-                <button>
-                  <img src="images/searchIcon.png" alt="Search Icon" />
-                </button>
-              </div>
-
-              <div class="mic">
-                <img src="images/micIcon.png" alt="Mic Icon" />
-              </div>
+          <div class="side-nav">
+            <div class="video">
+              <img src="images/videoIcon.png" alt="Video Icon" />
             </div>
-            <div class="side-nav">
-              <div class="video">
-                <img src="images/videoIcon.png" alt="Video Icon" />
-              </div>
-
-              <div class="notification">
-                <img
-                  src="images/notificationIcon.png"
-                  alt="Notification Icon"
-                />
-              </div>
-
-              <div class="profile">
-                <img src="images/profileIcon.png" alt="Profile Icon" />
-              </div>
+            <div class="notification">
+              <img src="images/notificationIcon.png" alt="Notification Icon" />
             </div>
-          </nav>
+            <div class="profile">
+              <img src="images/profileIcon.png" alt="Profile Icon" />
+            </div>
+          </div>
+        </nav>
+      </div>
 
+      <div class="main_container">
+        <aside>
+          <!-- <div class="ytb-bar">
+            <div class="sidebar">
+              <img src="images/barIcon.jpg" alt="Bar Icon" />
+            </div>
+  
+            <div class="logo">
+              <img src="images/ytblogo.png" alt="Youtube Logo" />
+            </div>
+          </div> -->
+          <div class="side-icons">
+            <i>
+              <img src="images/homeIcon.png" alt="Home Icon" />
+            </i>
+            <p>Home</p>
+          </div>
+          <div class="side-icons">
+            <i>
+              <img src="images/shortsIcon.png" alt="Shorts Icon" />
+            </i>
+            <p>Shorts</p>
+          </div>
+          <div class="side-icons">
+            <i>
+              <img src="images/subscriptionIcon.png" alt="Subscription Icon" />
+            </i>
+            <p>Subscription</p>
+          </div>
+        </aside>
+
+        <div class="video_container">
           <div class="tags">
             <div class="tag dark">All</div>
             <div class="tag light">Music</div>
@@ -76,70 +83,228 @@
             <div class="tag light">Game Shows</div>
             <div class="tag light">Web Development</div>
           </div>
-        </header>
-        <main>
-          <div class="card-container">
-            <div class="card">
-              <img src="images/video1.jpeg" alt="Youtube Video1" />
-              <div class="card-content">
-                <div class="card-profile">
-                  <img src="images/profileIcon.png" alt="Card Profile" />
-                </div>
-                <div class="content">
-                  <h3>Learn Photography At Home</h3>
-                  <p class="channel-name">Bajra Photography</p>
-                  <div class="content-status">
-                    <p>1K views.</p>
-                    <p>1 day ago</p>
-                  </div>
-                </div>
-                <div class="dots">
-                  <img src="images/3dotsIcon.png" />
-                </div>
-              </div>
-            </div>
 
-            <div class="card1">
-              <img src="images/video2.jpg" alt="Youtube Video2" />
-              <div class="card-content">
-                <div class="card-profile">
-                  <img src="images/profileIcon.png" alt="Card Profile" />
+          <main>
+            <div class="card-container">
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video1.jpeg" alt="Youtube Video1" />
                 </div>
-                <div class="content">
-                  <h3>Definition, Features and Types of Brand Positioning</h3>
-                  <p class="channel-name">Business Strategy</p>
-                  <div class="content-status">
-                    <p>10K views</p>
-                    <p>1 month ago</p>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Learn Photography At Home</p>
+                    </div>
+                    <div class="content-status">
+                      <p class="channel-name">Bajra Photography</p>
+                      <p>1K views.&nbsp;1 day ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
                   </div>
                 </div>
-                <div class="dots">
-                  <img src="images/3dotsIcon.png" />
-                </div>
               </div>
-            </div>
 
-            <div class="card2">
-              <img src="images/video1.jpeg" alt="Youtube Video1" />
-              <div class="card-content">
-                <div class="card-profile">
-                  <img src="images/profileIcon.png" alt="Card Profile" />
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video2.jpg" alt="Youtube Video2" />
                 </div>
-                <div class="content">
-                  <h3>Learn Photography At Home</h3>
-                  <p class="channel-name">Bajra Photography</p>
-                  <div class="content-status">
-                    <p>1K views.</p>
-                    <p>1 day ago</p>
+
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Definition, Features and Types of Brand Positioning</p>
+                    </div>
+
+                    <div class="content-status">
+                      <div class="channel-name"><p>Business Strategy</p></div>
+                      <p>10K views.&nbsp;1 month ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
                   </div>
                 </div>
-                <div class="dots">
-                  <img src="images/3dotsIcon.png" />
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video3.jpeg" alt="Youtube Video1" />
+                </div>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Bollywood songs playlists</p>
+                    </div>
+
+                    <div class="content-status">
+                      <div class="channel-name"><p>T-Series</p></div>
+                      <p>412M views.&nbsp;13 months ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video4.jpeg" alt="Youtube Video2" />
+                </div>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Swimming Prank on My Sister</p>
+                    </div>
+
+                    <div class="content-status">
+                      <div class="channel-name"><p>Prank Here</p></div>
+                      <p>2K views.&nbsp;7 months ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video5.jpeg" alt="Youtube Video2" />
+                </div>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Mix-Taylor Swift Songs</p>
+                    </div>
+                    <div class="content-status">
+                      <div class="channel-name"><p>Taylor Swift</p></div>
+
+                      <p>3.5B views.&nbsp;5 years ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video8.jpeg" alt="Youtube Video2" />
+                </div>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Tiktok Pranks gone wrong</p>
+                    </div>
+                    <div class="content-status">
+                      <div class="channel-name"><p>Tiktok</p></div>
+
+                      <p>10K views.&nbsp;1 month ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video6.jpeg" alt="Youtube Video2" />
+                </div>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>What is Business Finance?</p>
+                    </div>
+                    <div class="content-status">
+                      <div class="channel-name"><p>Business Strategy</p></div>
+
+                      <p>10K views.&nbsp;1 month ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video7.jpg" alt="Youtube Video2" />
+                </div>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Selena Gomez hit songs</p>
+                    </div>
+                    <div class="content-status">
+                      <div class="channel-name"><p>T-Series</p></div>
+
+                      <p>10K views.&nbsp;2 month ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/video2.jpg" alt="Youtube Video2" />
+                </div>
+                <div class="card-content">
+                  <div class="card-profile">
+                    <img src="images/profileIcon.png" alt="Card Profile" />
+                  </div>
+                  <div class="content">
+                    <div class="channel-title">
+                      <p>Definition, Features and Types of Brand Positioning</p>
+                    </div>
+                    <div class="content-status">
+                      <div class="channel-name"><p>Business Strategy</p></div>
+
+                      <p>10K views.&nbsp;8 weeks ago</p>
+                    </div>
+                  </div>
+                  <div class="dots">
+                    <img src="images/3dotsIcon.png" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </main>
+          </main>
+        </div>
       </div>
     </div>
   </body>

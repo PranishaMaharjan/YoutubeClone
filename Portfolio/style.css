@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header--show {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(10deg, black, rgb(34, 8, 151));
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.header__name--show {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-weight: ; */
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(70deg, rgb(247, 2, 2), white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.header__navbar__content--click {
+  margin: 3px;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 14px;
+  text-shadow: 3px 3px 6px black;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+#portfolio:hover,
+#projects:hover,
+#contact:hover,
+#resume:hover {
+  color: rgb(253, 23, 23);
+  text-shadow: 2px 2px 12px black;
+  border-bottom: 2px solid rgb(253, 23, 23);
+}
+
+.header__icons__show--click {
+  height: 24px;
+  width: 24px;
+  margin: 4px;
+}
+
+.header__icons__show--click:hover {
+  opacity: 0.7;
+  transition: 0.6s;
+}
+
+.container__photo {
+  margin-left: 100px;
+  margin-top: 160px;
+}
+
+.container__photo__profile--show {
+  height: 300px;
+  width: auto;
+  border-radius: 20%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.container__portfolio {
+  margin-top: 240px;
+  margin-right: 120px;
+}
+
+.container__portfolio__content--show {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.footer--show {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(10deg, rgb(134, 134, 134), white);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 150px;
+}
+
+.footer__contact--show,
+.footer__gmail--show,
+.footer__address--show {
+  display: flex;
+  gap: 3px;
+}
+
+.footer__contact__detail--show,
+.footer__gmail__detail--show,
+.footer__address__detail--show {
+  margin-top: 35px;
+  font-size: 16px;
+}
+
+.footer__contact__icon--show,
+.footer__gmail__icon--show,
+.footer__address__icon--show {
+  height: 30px;
+  width: 30px;
+  margin-top: 30px;
+}
